@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Form</title>
+</head>
+<body>
+    <center><h1>Student Manager</h1></center>
+    <center><p id="studentCount">Total Students: 0</p></center>
+
+    <form id="contactForm" action="/submit_form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <input type="submit" value="Add">
+    </form>
+    <h2>All Students</h2>
+    <ul id="studentList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
